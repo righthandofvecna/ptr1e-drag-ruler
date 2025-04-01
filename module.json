@@ -1,0 +1,66 @@
+{
+	"id": "ptr1e-drag-ruler",
+	"title": "PTR1e Drag Ruler Integration",
+	"description": "An enhancement of Drag Ruler for the PTR1e system.",
+	"version": "1.0.0",
+	"authors": [
+		{
+			"name": "RightHandOfVecna"
+		}
+	],
+	"compatibility": {
+		"minimum": "12",
+		"verified": "12"
+	},
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json",
+			"flags": {}
+		}
+	],
+	"relationships": {
+		"systems": [
+			{
+				"id": "ptu",
+				"type": "system",
+				"manifest": "https://github.com/dylanpiera/Foundry-Pokemon-Tabletop-United-System/releases/latest/download/system.json",
+				"compatibility": {
+					"verified": "4.3.7"
+				}
+			}
+		],
+		"requires": [
+			{
+				"id": "drag-ruler",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json",
+				"compatibility": {
+					"verified": "1.14.2"
+				}
+			},
+			{
+				"id": "lib-wrapper",
+				"type": "module",
+				"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+				"compatibility": {}
+			},
+			{
+				"id": "socketlib",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json",
+				"compatibility": {}
+			}
+		]
+	},
+	"esmodules": [
+		"scripts/main.js",
+		"scripts/socket.js",
+		"scripts/speed_provider.js"
+	],
+	"url": "https://github.com/righthandofvecna/ptr1e-drag-ruler",
+	"manifest": "https://github.com/righthandofvecna/ptr1e-drag-ruler/releases/latest/download/module.json",
+	"download": "https://github.com/righthandofvecna/ptr1e-drag-ruler/releases/latest/download/module.zip",
+	"socket": true
+}
